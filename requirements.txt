@@ -1,0 +1,37 @@
+# ─── Core RAG Framework ───────────────────────────────────────
+llama-index-core>=0.11.0
+llama-index-llms-openai>=0.2.0
+llama-index-embeddings-openai>=0.2.0
+llama-index-vector-stores-qdrant>=0.3.0
+
+# ─── Vector Store ─────────────────────────────────────────────
+qdrant-client>=1.10.0
+
+# ─── LLM Providers ────────────────────────────────────────────
+openai>=1.40.0
+
+# ─── Reranking ────────────────────────────────────────────────
+cohere>=5.5.0
+sentence-transformers>=3.0.0   # Cross-encoder fallback
+
+# ─── Evaluation ───────────────────────────────────────────────
+ragas>=0.1.18
+datasets>=2.20.0
+langchain-openai>=0.1.0        # Ragas LLM wrapper
+
+# ─── Configuration ────────────────────────────────────────────
+pydantic-settings>=2.3.0
+python-dotenv>=1.0.0
+
+# ─── Document Loading ─────────────────────────────────────────
+PyYAML>=6.0
+pypdf>=4.0.0
+
+# ─── CLI & Display ────────────────────────────────────────────
+rich>=13.7.0
+
+# ─── Numerical / Similarity ───────────────────────────────────
+numpy>=1.26.0
+
+# ─── Airflow (optional — comment out if not using) ─────────────
+# apache-airflow>=2.9.0

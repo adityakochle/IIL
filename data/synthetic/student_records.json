@@ -1,0 +1,263 @@
+{
+  "description": "Synthetic SFSU student transcript records. All names are fictional. Records are keyed by student_id for direct lookup.",
+  "privacy_note": "In production, replace with encrypted DB or FERPA-compliant student information system (SIS) API.",
+  "schema_note": "Records contain ONLY student-owned facts: completed courses, GPA, units, aid status. Missing/outstanding requirements are NEVER stored here — they are derived at query time by DegreeAuditor against live policy documents.",
+  "records": {
+    "STU-2024-0001": {
+      "student_id": "STU-2024-0001",
+      "name": "Alex Rivera",
+      "email": "arivera@sfsu.edu",
+      "admission_type": "transfer",
+      "admit_term": "Fall 2024",
+      "catalog_year": "2024-25",
+      "declared_major": "Computer Science",
+      "college": "Science & Engineering",
+      "academic_standing": "Good Standing",
+      "enrollment_status": "Full-Time",
+      "cumulative_gpa": 3.2,
+      "major_gpa": 3.1,
+      "units_transferred": 65,
+      "units_completed_at_sfsu": 12,
+      "total_units_attempted": 77,
+      "financial_aid": {
+        "status": "Active",
+        "type": ["Cal Grant A", "Federal Pell Grant"],
+        "remaining_aid_years": 2.5
+      },
+      "transfer_institution": "City College of San Francisco",
+      "igetc_certified": false,
+      "transfer_courses_completed": [
+        {"course": "Calculus I",                  "sfsu_equivalent": "MATH 124",        "grade": "B+", "units": 4},
+        {"course": "Calculus II",                 "sfsu_equivalent": "MATH 125",        "grade": "B",  "units": 4},
+        {"course": "Intro to Programming (Python)","sfsu_equivalent": "CS 101",          "grade": "A-", "units": 3},
+        {"course": "Intro to Programming II (Java)","sfsu_equivalent": "CS 110",         "grade": "B+", "units": 3},
+        {"course": "English Composition",         "sfsu_equivalent": "ENG 114",         "grade": "A",  "units": 3},
+        {"course": "Critical Thinking",           "sfsu_equivalent": "ENG 214",         "grade": "B+", "units": 3},
+        {"course": "Statistics",                  "sfsu_equivalent": "MATH 124 (partial)","grade": "A", "units": 3},
+        {"course": "Oral Communication",          "sfsu_equivalent": "COMM 150",        "grade": "A-", "units": 3},
+        {"course": "American Government",         "sfsu_equivalent": "PLSI 100",        "grade": "B",  "units": 3},
+        {"course": "US History",                  "sfsu_equivalent": "HIST 110",        "grade": "B+", "units": 3}
+      ],
+      "sfsu_courses_completed": [
+        {"course": "CS 211",       "title": "Object-Oriented Programming",    "grade": "B+", "units": 3, "term": "Fall 2024"},
+        {"course": "CS 230",       "title": "Discrete Mathematics for CS",    "grade": "B",  "units": 3, "term": "Fall 2024"},
+        {"course": "MATH 226",     "title": "Calculus III",                   "grade": "C+", "units": 4, "term": "Fall 2024"},
+        {"course": "UD-C GE",      "title": "Art History 301",                "grade": "A-", "units": 3, "term": "Fall 2024"}
+      ],
+      "courses_in_progress": [
+        {"course": "CS 240",       "title": "Intro to Data Structures",       "term": "Spring 2025"},
+        {"course": "CS 340",       "title": "Programming Languages",          "term": "Spring 2025"},
+        {"course": "UD-D GE",      "title": "ECON 301",                       "term": "Spring 2025"}
+      ],
+      "advisor_notes": "Student expressed interest in AI/ML concentration. Flagged C+ in MATH 226 — monitor for MATH 245 readiness."
+    },
+
+    "STU-2024-0002": {
+      "student_id": "STU-2024-0002",
+      "name": "Jordan Kim",
+      "email": "jkim@sfsu.edu",
+      "admission_type": "transfer",
+      "admit_term": "Fall 2023",
+      "catalog_year": "2023-24",
+      "declared_major": "Business Administration",
+      "college": "Business",
+      "academic_standing": "Academic Probation",
+      "enrollment_status": "Part-Time",
+      "cumulative_gpa": 1.87,
+      "major_gpa": 1.75,
+      "units_transferred": 60,
+      "units_completed_at_sfsu": 24,
+      "total_units_attempted": 84,
+      "financial_aid": {
+        "status": "SAP Warning",
+        "type": ["Federal Pell Grant"],
+        "remaining_aid_years": 1.5,
+        "sap_note": "Completion rate 58% — below 67% threshold. Must appeal or improve by end of Spring 2025."
+      },
+      "transfer_institution": "Skyline College",
+      "igetc_certified": true,
+      "transfer_courses_completed": [
+        {"course": "Business Math",               "sfsu_equivalent": "MATH 110",  "grade": "C",  "units": 3},
+        {"course": "Principles of Accounting I",  "sfsu_equivalent": "ACCT 100",  "grade": "B-", "units": 3},
+        {"course": "Principles of Accounting II", "sfsu_equivalent": "ACCT 101",  "grade": "C+", "units": 3},
+        {"course": "Microeconomics",              "sfsu_equivalent": "ECON 101",  "grade": "C+", "units": 3},
+        {"course": "Macroeconomics",              "sfsu_equivalent": "ECON 102",  "grade": "C",  "units": 3},
+        {"course": "Business Communications",     "sfsu_equivalent": "BUS 300",   "grade": "B",  "units": 3},
+        {"course": "English Composition",         "sfsu_equivalent": "ENG 114",   "grade": "B-", "units": 3},
+        {"course": "Statistics for Business",     "sfsu_equivalent": "MATH 124",  "grade": "C",  "units": 3}
+      ],
+      "sfsu_courses_completed": [
+        {"course": "BUS 301", "title": "Organizational Behavior",              "grade": "D",   "units": 3, "term": "Fall 2023"},
+        {"course": "BUS 350", "title": "Business Law",                         "grade": "W",   "units": 3, "term": "Fall 2023"},
+        {"course": "FIN 350", "title": "Financial Management",                 "grade": "D+",  "units": 3, "term": "Spring 2024"},
+        {"course": "MKT 431", "title": "Marketing Management",                 "grade": "C-",  "units": 3, "term": "Spring 2024"},
+        {"course": "BUS 301", "title": "Organizational Behavior (repeat)",     "grade": "C+",  "units": 3, "term": "Fall 2024"},
+        {"course": "MGT 405", "title": "Management Principles",                "grade": "IP",  "units": 3, "term": "Spring 2025"}
+      ],
+      "courses_in_progress": [
+        {"course": "MGT 405", "title": "Management Principles",                "term": "Spring 2025"},
+        {"course": "BUS 350", "title": "Business Law (retake)",                "term": "Spring 2025"}
+      ],
+      "advisor_notes": "High risk of academic disqualification if GPA doesn't recover above 2.0 by end of Spring 2025. W in BUS 350 counts as attempted for SAP. SAP appeal approved conditionally Spring 2024. Must not drop any more courses."
+    },
+
+    "STU-2024-0003": {
+      "student_id": "STU-2024-0003",
+      "name": "Priya Nair",
+      "email": "pnair@sfsu.edu",
+      "admission_type": "transfer",
+      "admit_term": "Fall 2022",
+      "catalog_year": "2022-23",
+      "declared_major": "Computer Science",
+      "college": "Science & Engineering",
+      "academic_standing": "Good Standing",
+      "enrollment_status": "Full-Time",
+      "cumulative_gpa": 3.78,
+      "major_gpa": 3.85,
+      "units_transferred": 70,
+      "units_completed_at_sfsu": 48,
+      "total_units_attempted": 118,
+      "financial_aid": {
+        "status": "Active",
+        "type": ["Presidential Transfer Scholarship", "Federal Work-Study"],
+        "remaining_aid_years": 0.5
+      },
+      "transfer_institution": "De Anza College",
+      "igetc_certified": false,
+      "transfer_courses_completed": [
+        {"course": "Calculus I",          "sfsu_equivalent": "MATH 124",       "grade": "A",  "units": 4},
+        {"course": "Calculus II",         "sfsu_equivalent": "MATH 125",       "grade": "A-", "units": 4},
+        {"course": "Calculus III",        "sfsu_equivalent": "MATH 226",       "grade": "A",  "units": 4},
+        {"course": "Linear Algebra",      "sfsu_equivalent": "MATH 245",       "grade": "A",  "units": 3},
+        {"course": "Discrete Mathematics","sfsu_equivalent": "CS 230",         "grade": "A",  "units": 3},
+        {"course": "Intro to CS (C++)",   "sfsu_equivalent": "CS 101",         "grade": "A",  "units": 3},
+        {"course": "Data Structures (Java)","sfsu_equivalent": "CS 211/CS 240","grade": "A-", "units": 4},
+        {"course": "English Composition", "sfsu_equivalent": "ENG 114",        "grade": "A",  "units": 3},
+        {"course": "Critical Thinking",   "sfsu_equivalent": "ENG 214",        "grade": "A",  "units": 3},
+        {"course": "Oral Communication",  "sfsu_equivalent": "COMM 150",       "grade": "A-", "units": 3}
+      ],
+      "sfsu_courses_completed": [
+        {"course": "CS 311",  "title": "Algorithm Design and Analysis",  "grade": "A",  "units": 3, "term": "Fall 2022"},
+        {"course": "CS 340",  "title": "Programming Languages",          "grade": "A-", "units": 3, "term": "Fall 2022"},
+        {"course": "CS 351",  "title": "Computer Architecture",          "grade": "A",  "units": 3, "term": "Fall 2022"},
+        {"course": "CS 412",  "title": "Operating Systems",              "grade": "A-", "units": 3, "term": "Spring 2023"},
+        {"course": "CS 431",  "title": "Machine Learning",               "grade": "A",  "units": 3, "term": "Spring 2023"},
+        {"course": "CS 476",  "title": "Software Engineering",           "grade": "A",  "units": 3, "term": "Fall 2023"},
+        {"course": "CS 432",  "title": "Deep Learning",                  "grade": "A-", "units": 3, "term": "Fall 2023"},
+        {"course": "MATH 324","title": "Probability and Statistics",     "grade": "A",  "units": 3, "term": "Fall 2023"},
+        {"course": "CS 469",  "title": "Natural Language Processing",    "grade": "A",  "units": 3, "term": "Spring 2024"},
+        {"course": "CS 461",  "title": "Database Systems",               "grade": "A-", "units": 3, "term": "Spring 2024"},
+        {"course": "UD-B GE", "title": "Biology 315",                   "grade": "B+", "units": 3, "term": "Spring 2024"},
+        {"course": "UD-D GE", "title": "Sociology 425",                 "grade": "A-", "units": 3, "term": "Fall 2024"},
+        {"course": "UD-C GE", "title": "Philosophy 310",                "grade": "A",  "units": 3, "term": "Fall 2024"},
+        {"course": "CS 410",  "title": "Human-Computer Interaction",    "grade": "A-", "units": 3, "term": "Fall 2024"}
+      ],
+      "courses_in_progress": [
+        {"course": "CS 499",  "title": "Senior Capstone Project",        "term": "Spring 2025"}
+      ],
+      "advisor_notes": "On track for May 2025 graduation. Summa Cum Laude candidate (GPA 3.78). Applied Math Minor declared and complete. Strong candidate for graduate school recommendation letter."
+    },
+
+    "STU-2024-0004": {
+      "student_id": "STU-2024-0004",
+      "name": "Marcus Thompson",
+      "email": "mthompson@sfsu.edu",
+      "admission_type": "transfer",
+      "admit_term": "Spring 2024",
+      "catalog_year": "2023-24",
+      "declared_major": "Psychology",
+      "college": "Health and Social Sciences",
+      "academic_standing": "Good Standing",
+      "enrollment_status": "Full-Time",
+      "cumulative_gpa": 3.45,
+      "major_gpa": 3.6,
+      "units_transferred": 62,
+      "units_completed_at_sfsu": 15,
+      "total_units_attempted": 77,
+      "financial_aid": {
+        "status": "Active",
+        "type": ["Dean's Transfer Award", "Federal Direct Subsidized Loan"],
+        "remaining_aid_years": 2.0
+      },
+      "transfer_institution": "San Francisco City College",
+      "igetc_certified": true,
+      "transfer_courses_completed": [
+        {"course": "General Psychology",             "sfsu_equivalent": "PSYC 200",        "grade": "A",  "units": 3},
+        {"course": "Statistics for Psychology",      "sfsu_equivalent": "MATH 124 equiv",  "grade": "A-", "units": 3},
+        {"course": "Research Methods in Psychology", "sfsu_equivalent": "PSYC 210",        "grade": "A",  "units": 3},
+        {"course": "Abnormal Psychology",            "sfsu_equivalent": "PSYC 380",        "grade": "B+", "units": 3},
+        {"course": "Developmental Psychology",       "sfsu_equivalent": "PSYC 310",        "grade": "A",  "units": 3},
+        {"course": "Calculus I",                     "sfsu_equivalent": "MATH 124",        "grade": "B+", "units": 4},
+        {"course": "English Composition",            "sfsu_equivalent": "ENG 114",         "grade": "A-", "units": 3},
+        {"course": "Critical Thinking",              "sfsu_equivalent": "ENG 214",         "grade": "A",  "units": 3},
+        {"course": "Oral Communication",             "sfsu_equivalent": "COMM 150",        "grade": "B+", "units": 3},
+        {"course": "Sociology 101",                  "sfsu_equivalent": "SOC 100",         "grade": "A",  "units": 3}
+      ],
+      "sfsu_courses_completed": [
+        {"course": "PSYC 450", "title": "Cognitive Psychology",   "grade": "A",  "units": 3, "term": "Spring 2024"},
+        {"course": "PSYC 470", "title": "Social Psychology",      "grade": "A-", "units": 3, "term": "Spring 2024"},
+        {"course": "PSYC 490", "title": "Biopsychology",          "grade": "B+", "units": 3, "term": "Spring 2024"},
+        {"course": "UD-B GE",  "title": "Chemistry 211",          "grade": "B",  "units": 3, "term": "Fall 2024"},
+        {"course": "UD-C GE",  "title": "English 401",            "grade": "A",  "units": 3, "term": "Fall 2024"}
+      ],
+      "courses_in_progress": [
+        {"course": "PSYC 499",    "title": "Psychology Capstone",      "term": "Spring 2025"},
+        {"course": "UD-D GE",     "title": "Political Science 320",    "term": "Spring 2025"},
+        {"course": "PSYC 480",    "title": "Health Psychology",        "term": "Spring 2025"}
+      ],
+      "advisor_notes": "Interested in changing major to Computer Science. Has not completed any CS prerequisites. Currently 3.45 GPA qualifies for CS impaction threshold (3.0). Estimated 3 additional semesters if switch approved."
+    },
+
+    "STU-2024-0005": {
+      "student_id": "STU-2024-0005",
+      "name": "Sofia Mendez",
+      "email": "smendez@sfsu.edu",
+      "admission_type": "freshman",
+      "admit_term": "Fall 2021",
+      "catalog_year": "2021-22",
+      "declared_major": "Computer Science",
+      "college": "Science & Engineering",
+      "academic_standing": "Good Standing",
+      "enrollment_status": "Full-Time",
+      "cumulative_gpa": 2.85,
+      "major_gpa": 2.7,
+      "units_transferred": 0,
+      "units_completed_at_sfsu": 90,
+      "total_units_attempted": 96,
+      "financial_aid": {
+        "status": "Active",
+        "type": ["First-Generation Transfer Grant", "Federal Direct Unsubsidized Loan"],
+        "remaining_aid_years": 1.0,
+        "sap_note": "Approaching 150% max timeframe — 180 unit cap. Currently at 96/180."
+      },
+      "transfer_institution": null,
+      "igetc_certified": false,
+      "transfer_courses_completed": [],
+      "sfsu_courses_completed": [
+        {"course": "CS 101",   "title": "Introduction to Computing",       "grade": "B",  "units": 3, "term": "Fall 2021"},
+        {"course": "MATH 124", "title": "Calculus I",                      "grade": "C+", "units": 4, "term": "Fall 2021"},
+        {"course": "CS 110",   "title": "Introduction to Programming",     "grade": "B+", "units": 3, "term": "Spring 2022"},
+        {"course": "MATH 125", "title": "Calculus II",                     "grade": "C",  "units": 4, "term": "Spring 2022"},
+        {"course": "CS 211",   "title": "Object-Oriented Programming",     "grade": "B-", "units": 3, "term": "Fall 2022"},
+        {"course": "CS 230",   "title": "Discrete Mathematics",            "grade": "C+", "units": 3, "term": "Fall 2022"},
+        {"course": "MATH 226", "title": "Calculus III",                    "grade": "C",  "units": 4, "term": "Spring 2023"},
+        {"course": "CS 240",   "title": "Data Structures",                 "grade": "C+", "units": 3, "term": "Spring 2023"},
+        {"course": "CS 311",   "title": "Algorithm Design",                "grade": "C",  "units": 3, "term": "Fall 2023"},
+        {"course": "CS 340",   "title": "Programming Languages",           "grade": "B-", "units": 3, "term": "Fall 2023"},
+        {"course": "CS 351",   "title": "Computer Architecture",           "grade": "B",  "units": 3, "term": "Spring 2024"},
+        {"course": "MATH 324", "title": "Probability and Statistics",      "grade": "B+", "units": 3, "term": "Spring 2024"},
+        {"course": "CS 412",   "title": "Operating Systems",               "grade": "C+", "units": 3, "term": "Fall 2024"},
+        {"course": "CS 476",   "title": "Software Engineering",            "grade": "B-", "units": 3, "term": "Fall 2024"},
+        {"course": "UD-B GE",  "title": "Physics 220",                    "grade": "B",  "units": 3, "term": "Fall 2023"},
+        {"course": "UD-C GE",  "title": "Art 301",                        "grade": "A-", "units": 3, "term": "Spring 2024"},
+        {"course": "UD-D GE",  "title": "Sociology 350",                  "grade": "B+", "units": 3, "term": "Fall 2024"}
+      ],
+      "courses_in_progress": [
+        {"course": "CS 461",  "title": "Database Systems",     "term": "Spring 2025"},
+        {"course": "CS 431",  "title": "Machine Learning",     "term": "Spring 2025"},
+        {"course": "CS 499",  "title": "Senior Capstone",      "term": "Spring 2025"}
+      ],
+      "advisor_notes": "On track for May 2025 graduation. All GE complete. Major GPA 2.7 — above 2.0 threshold. Financial aid approaching max timeframe warning but within limits for one more semester."
+    }
+  }
+}

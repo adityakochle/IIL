@@ -1,0 +1,166 @@
+{
+  "version": "1.0",
+  "description": "20 benchmark Q&A pairs for IIL accuracy evaluation. Ground truth answers are derived from the synthetic SFSU policy documents.",
+  "queries": [
+    {
+      "id": "Q001",
+      "query": "I'm transferring with 65 units. Can I still graduate in 2 years if I switch my major to Computer Science? I have a 3.2 GPA and completed Calc 1 and 2.",
+      "ground_truth": "Based on SFSU policy, transferring 65 units means you have up to 70 units accepted (CSU cap). CS requires Math 226 (Calc 3) which you haven't completed. The estimated timeline is 2.5 years, not 2 years, due to the Math 226 prerequisite chain. Consider declaring the Applied Math Minor which leverages your existing Calc 1 and 2 credits.",
+      "expected_citations": ["SFSU Catalog 2024-25, Transfer Credit Policy", "SFSU Catalog 2024-25, CS Major Requirements"],
+      "category": "transfer_timeline",
+      "difficulty": "high"
+    },
+    {
+      "id": "Q002",
+      "query": "What is the maximum number of units I can transfer from a California Community College?",
+      "ground_truth": "Per CSU Executive Order 1100, SFSU accepts a maximum of 70 semester units from California Community Colleges toward an undergraduate degree. Units beyond 70 do not apply toward degree requirements.",
+      "expected_citations": ["SFSU Catalog 2024-25, Transfer Credit Policy, pg 142"],
+      "category": "transfer_credit",
+      "difficulty": "low"
+    },
+    {
+      "id": "Q003",
+      "query": "What GPA do I need to change my major to Computer Science after transferring?",
+      "ground_truth": "To change to Computer Science after transfer, you must meet the CS impaction threshold of 3.0 GPA. Per Academic Policy 23-14, the current threshold applies at the time of the major change petition, not your original transfer GPA.",
+      "expected_citations": ["SFSU Catalog 2024-25, Transfer Credit Policy, pg 144", "SFSU Academic Policy Manual 2024, pg 12"],
+      "category": "major_change",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q004",
+      "query": "Does IGETC certification satisfy all general education requirements at SFSU?",
+      "ground_truth": "IGETC certification satisfies lower-division GE requirements only. All students still must complete 9 units of upper-division GE at SFSU (UD-B, UD-C, UD-D areas). These cannot be transferred from other institutions.",
+      "expected_citations": ["SFSU Catalog 2024-25, Graduation Requirements, pg 58-60"],
+      "category": "general_education",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q005",
+      "query": "What is the minimum residency requirement to graduate from SFSU?",
+      "ground_truth": "Students must complete a minimum of 30 units in residence at SFSU, with at least 12 of those in the major and a minimum of 24 units of upper-division coursework at SFSU. Transfer units from other institutions do not count toward residency.",
+      "expected_citations": ["SFSU Catalog 2024-25, Graduation Requirements, pg 62", "SFSU Catalog 2024-25, Transfer Credit Policy, pg 148"],
+      "category": "graduation",
+      "difficulty": "low"
+    },
+    {
+      "id": "Q006",
+      "query": "I failed CS 311 and my GPA dropped to 1.9. What happens to my enrollment?",
+      "ground_truth": "With a cumulative GPA below 2.0, you are placed on Academic Probation. You'll be restricted to 13 units per semester, lose priority enrollment, and must meet with your advisor within 30 days. If your GPA remains below 2.0 for two consecutive semesters, or falls below 1.5, you may be disqualified.",
+      "expected_citations": ["SFSU Academic Policy Manual 2024, pg 25"],
+      "category": "academic_standing",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q007",
+      "query": "Can I transfer AP Calculus BC credit and have it count as both Calc 1 and Calc 2 at SFSU?",
+      "ground_truth": "Yes. An AP Calculus BC score of 3 or higher is evaluated as Math 124 (Calc 1) and Math 125 (Calc 2), totaling 8 units. These credits count toward the 70-unit transfer maximum.",
+      "expected_citations": ["SFSU Catalog 2024-25, Transfer Credit Policy, pg 146"],
+      "category": "ap_credit",
+      "difficulty": "low"
+    },
+    {
+      "id": "Q008",
+      "query": "What is the prerequisite chain for CS 412 Operating Systems?",
+      "ground_truth": "CS 412 requires CS 311 (Algorithm Design) and CS 351 (Computer Architecture). CS 311 requires CS 240 and CS 230. CS 240 requires CS 211. CS 211 requires CS 110 and Math 124. The full chain is: CS 101 → CS 110 → CS 211 → CS 240 → CS 311 → CS 412.",
+      "expected_citations": ["SFSU Catalog 2024-25, CS Major Requirements, pg 215"],
+      "category": "prerequisites",
+      "difficulty": "high"
+    },
+    {
+      "id": "Q009",
+      "query": "How many units does the CS major require and what is the minimum GPA?",
+      "ground_truth": "The CS B.S. requires 120 total units. The minimum major GPA is 2.0, with no individual major course grade below C. Students must also maintain a 2.0 cumulative GPA.",
+      "expected_citations": ["SFSU Catalog 2024-25, CS Major Requirements, pg 210-212"],
+      "category": "cs_requirements",
+      "difficulty": "low"
+    },
+    {
+      "id": "Q010",
+      "query": "If I take a Leave of Absence, do I lose my catalog year rights?",
+      "ground_truth": "No. Students in good academic standing (GPA 2.0 or higher) may take a Leave of Absence for up to two consecutive semesters without losing catalog year rights. The leave must be approved by the college Dean before the semester starts.",
+      "expected_citations": ["SFSU Academic Policy Manual 2024, pg 42"],
+      "category": "leave_of_absence",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q011",
+      "query": "What is the Applied Math Minor and how does it benefit CS students?",
+      "ground_truth": "The Applied Math Minor (18 units) is highly compatible with the CS major due to course overlap. For CS students who transfer with Calc 1 and 2, only Math 226 (already required for CS B.S.) and Math 370 (3 additional units) are needed beyond CS degree requirements. The minor appears on the transcript and diploma.",
+      "expected_citations": ["SFSU Catalog 2024-25, CS Major Requirements, pg 224", "SFSU Academic Policy Manual 2024, pg 38"],
+      "category": "minors",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q012",
+      "query": "When must I submit my graduation application if I want to graduate in May?",
+      "ground_truth": "For May (Spring) graduation, the application deadline is October 1 of the prior Fall semester. Late applications are accepted until Week 6 of the graduation semester with a $25 fee, and are processed for the next term after that.",
+      "expected_citations": ["SFSU Catalog 2024-25, Graduation Requirements, pg 63"],
+      "category": "graduation",
+      "difficulty": "low"
+    },
+    {
+      "id": "Q013",
+      "query": "I'm transferring from a UC with 80 units. How many can SFSU accept?",
+      "ground_truth": "Students from four-year institutions may transfer up to 70 units of lower-division coursework without a cap on upper-division units. If you also have CCC coursework, the combined maximum is 90 total transfer units applicable toward an SFSU degree.",
+      "expected_citations": ["SFSU Catalog 2024-25, Transfer Credit Policy, pg 143"],
+      "category": "transfer_credit",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q014",
+      "query": "What GPA do I need to graduate with Magna Cum Laude honors?",
+      "ground_truth": "Magna Cum Laude requires a cumulative GPA of 3.7–3.899. You must also have completed at least 60 units at SFSU. Transfer units do not count toward the 60-unit minimum for honors eligibility.",
+      "expected_citations": ["SFSU Catalog 2024-25, Graduation Requirements, pg 64"],
+      "category": "graduation",
+      "difficulty": "low"
+    },
+    {
+      "id": "Q015",
+      "query": "Can I withdraw from a course in week 8 without academic penalty?",
+      "ground_truth": "Yes. During weeks 3–10, you may withdraw with a 'W' grade that appears on your transcript but does not impact your GPA. The 'W' does count as a unit attempted for SAP (financial aid) purposes. After week 10, withdrawal requires Dean's Office approval.",
+      "expected_citations": ["SFSU Academic Policy Manual 2024, pg 30"],
+      "category": "withdrawal",
+      "difficulty": "low"
+    },
+    {
+      "id": "Q016",
+      "query": "I transferred with 65 units. How many more units can I attempt before financial aid cuts off?",
+      "ground_truth": "The financial aid maximum timeframe is 150% of your program length. For a 120-unit degree, the maximum is 180 attempted units. You transferred with 65 units, so you may attempt up to 115 additional units at SFSU (180 - 65 = 115) before hitting the limit.",
+      "expected_citations": ["SFSU Financial Aid Handbook 2024-25, pg 22"],
+      "category": "financial_aid",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q017",
+      "query": "Does CS 499 Senior Capstone count toward upper-division GE?",
+      "ground_truth": "CS 499 Senior Capstone is a major requirement, not a GE course. Upper-division GE (9 units in UD-B, UD-C, UD-D) must be completed separately at SFSU. GE and major courses generally cannot double-count unless explicitly approved.",
+      "expected_citations": ["SFSU Catalog 2024-25, CS Major Requirements, pg 215", "SFSU Catalog 2024-25, Graduation Requirements, pg 60"],
+      "category": "cs_requirements",
+      "difficulty": "high"
+    },
+    {
+      "id": "Q018",
+      "query": "What happens to my Incomplete grade if I don't finish the work within a year?",
+      "ground_truth": "An Incomplete ('I') grade that is not resolved within one year converts to an 'IC' (Incomplete/Charged), which counts as an F in GPA calculations. You should work with your instructor and advisor to ensure the incomplete is resolved before the deadline.",
+      "expected_citations": ["SFSU Academic Policy Manual 2024, pg 30"],
+      "category": "grades",
+      "difficulty": "low"
+    },
+    {
+      "id": "Q019",
+      "query": "What Cal Grant renewal requirements must transfer students meet?",
+      "ground_truth": "Transfer students receiving Cal Grant must renew annually by the March 2 FAFSA/CADAA deadline, maintain a minimum 2.0 GPA, remain enrolled full-time (12+ units), and be on track to graduate within the remaining Cal Grant A term limit (maximum 4 years of undergraduate-level Cal Grant A).",
+      "expected_citations": ["SFSU Financial Aid Handbook 2024-25, pg 22"],
+      "category": "financial_aid",
+      "difficulty": "medium"
+    },
+    {
+      "id": "Q020",
+      "query": "I have 92 units and want to change my major to CS. Are there special restrictions?",
+      "ground_truth": "Yes. Per Academic Policy 23-14, students with 90 or more units at the time of a major change petition may be required to provide an academic plan demonstrating graduation within two additional semesters. The plan must be approved by the Dean of the receiving college (Science & Engineering for CS).",
+      "expected_citations": ["SFSU Academic Policy Manual 2024, pg 12"],
+      "category": "major_change",
+      "difficulty": "high"
+    }
+  ]
+}
