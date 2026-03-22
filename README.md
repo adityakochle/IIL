@@ -92,16 +92,13 @@ A production-grade **Retrieval-Augmented Generation (RAG)** engine that centrali
 
 ## 🎬 Live Demo
 
-
+> Watch IIL answer a complex transfer advising question  and run a live degree audit for a specific student in under 10 seconds. 
 
 <div>
     <a href="https://www.loom.com/share/1323b1d2a1b64c13aad14de00bb9759c">
-      <p>Revolutionizing Academic Advising with Institutional Intelligence Layer - Watch Video</p>
-    </a>
-    <a href="https://www.loom.com/share/1323b1d2a1b64c13aad14de00bb9759c">
       <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/1323b1d2a1b64c13aad14de00bb9759c-ca693f6e95257cf5-full-play.gif#t=0.1">
     </a>
-  </div>
+</div>
 
 ### Anonymous Mode — Policy Lookup
 
