@@ -94,11 +94,7 @@ A production-grade **Retrieval-Augmented Generation (RAG)** engine that centrali
 
 > Watch IIL answer a complex transfer advising question — and run a live degree audit for a specific student — in under 5 seconds.
 
-<div>
-  <a href="https://www.loom.com/share/1323b1d2a1b64c13aad14de00bb9759c">
-    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/1323b1d2a1b64c13aad14de00bb9759c-with-play.gif#t=0.1">
-  </a>
-</div>
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/1323b1d2a1b64c13aad14de00bb9759c" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 ### Anonymous Mode — Policy Lookup
 
